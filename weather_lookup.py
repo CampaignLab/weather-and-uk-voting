@@ -35,7 +35,7 @@ def dump_weather_for_t(t: datetime = datetime(year=2018, month=5, day=3).isoform
         except IndexError:
             dist_min = dists  # just one entry
 
-        if dist_min > 1:  # 0.1deg is about 7 miles
+        if dist_min > 0.1:  # 0.1deg is about 7 miles
             needs_new_request = True
     else:
         needs_new_request = True

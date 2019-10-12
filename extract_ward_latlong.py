@@ -21,7 +21,7 @@ with open('geography-data/Wards_December_2018_Super_Generalised_Clipped_Boundari
         longitude = float(row[6])
         latitude = float(row[7])
 
-        weather_filename = dump_weather_for_t(t=datetime(year=2018, month=5, day=3).isoformat(),
+        weather_filename = dump_weather_for_t(t=datetime(year=2017, month=6, day=8).isoformat(),
                                               location=(latitude, longitude),
                                               dry_run=False)
 
